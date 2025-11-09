@@ -7,3 +7,9 @@
 [submodule "microservices/ems-algashop-billing"]
 	path = microservices/ems-algashop-billing
 	url = https://github.com/jeanmalvessi/ems-algashop-billing.git
+[submodule "microservices/product-catalog"]
+	path = microservices/product-catalog
+	url = https://github.com/jeanmalvessi/ems-algashop-product-catalog.git
+[submodule "microservices/ems-algashop-product-catalog"]
+	path = microservices/ems-algashop-product-catalog
+	url = https://github.com/jeanmalvessi/ems-algashop-product-catalog.git
