@@ -12,7 +12,7 @@ Microservice built using a purist approach of DDD, separating the domain model f
 # billing
 Microservice built using a pragmatic approach of DDD, accepting a certain dependence on frameworks and bringing the domain model closer to technological aspects, such as persistence, in order to reduce complexity and facilitate implementation.
 
-# product-catalog
+# product-catalog (in development)
 Microservice built using CDD (Contract-Driven Development) with Spring Cloud Contract.
 
 # The technologies used are:
