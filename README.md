@@ -17,7 +17,7 @@ Microservice built using CDD (Contract-Driven Development) with Spring Cloud Con
 
 # The technologies used are:
 - Java 21
-- Spring (Boot, Web, Data JPA, Validation, Cloud Contract)
+- Spring (Boot, Web, Data JPA, Validation, Cloud Contract, REST Docs)
 - H2 Database
 - Docker
 - Gradle
