@@ -1,15 +1,20 @@
-[submodule "microservices/ems-algashop-ordering"]
-	path = microservices/ems-algashop-ordering
-	url = https://github.com/jeanmalvessi/ems-algashop-ordering.git
 [submodule "docs"]
 	path = docs
 	url = https://github.com/jeanmalvessi/ems-algashop-docs.git
+	branch = main
 [submodule "microservices/ems-algashop-billing"]
-	path = microservices/ems-algashop-billing
-	url = https://github.com/jeanmalvessi/ems-algashop-billing.git
-[submodule "microservices/product-catalog"]
-	path = microservices/product-catalog
-	url = https://github.com/jeanmalvessi/ems-algashop-product-catalog.git
+    path = microservices/ems-algashop-billing
+    url = https://github.com/jeanmalvessi/ems-algashop-billing.git
+	branch = main
+[submodule "microservices/ems-algashop-ordering"]
+	path = microservices/ems-algashop-ordering
+	url = https://github.com/jeanmalvessi/ems-algashop-ordering.git
+	branch = main
 [submodule "microservices/ems-algashop-product-catalog"]
 	path = microservices/ems-algashop-product-catalog
 	url = https://github.com/jeanmalvessi/ems-algashop-product-catalog.git
+	branch = main
+[submodule "template"]
+	path = template
+	url = https://github.com/jeanmalvessi/ems-algashop-template.git
+	branch = main
