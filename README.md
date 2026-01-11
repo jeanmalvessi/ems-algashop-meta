@@ -16,7 +16,7 @@ Microservice built using a pragmatic approach of DDD, accepting a certain depend
 Microservice built using CDD (Contract-Driven Development) with Spring Cloud Contract.
 
 # The technologies used are:
-- Java 21
+- Java 21 / 25
 - Spring (Boot, Web, Data JPA, Validation, Cloud Contract, REST Docs)
 - PostgreSQL Database with Flyway
 - Docker
