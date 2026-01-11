@@ -2,22 +2,22 @@ services:
   wiremock:
     image: wiremock/wiremock:3x
     ports:
-      - "8787:8080"
+      - '8787:8080'
     volumes:
       - ./etc/wiremock:/home/wiremock/mappings
     command: --verbose --disable-http2-plain
-  postgres:
+  algashop-postgres:
     image: postgres:17-alpine
     deploy:
       resources:
         limits:
           memory: 512M
     ports:
-      - 5432:5432
+      - '5432:5432'
     environment:
       POSTGRES_PASSWORD: postgres
     volumes:
-      - postgres:/var/lib/postgresql/data
+      - algashop-postgres:/var/lib/postgresql/data
       - ./etc/postgres/init-user-db.sh:/docker-entrypoint-initdb.d/init-user-db.sh
     healthcheck:
       test: pg_isready -U postgres -d postgres
@@ -28,9 +28,9 @@ services:
     image: algaworks/fastpay:latest
     restart: no
     ports:
-      - 9995:9995
+      - '9995:9995'
     depends_on:
-      postgres:
+      algashop-postgres:
         condition: service_healthy
     deploy:
       resources:
@@ -43,4 +43,4 @@ services:
       DATABASE_PASSWORD: postgres
       SPRING_PROFILES_ACTIVE: docker
 volumes:
-  postgres:
+  algashop-postgres:
