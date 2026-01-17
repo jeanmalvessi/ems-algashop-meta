@@ -4,7 +4,7 @@ This is a project built during the AlgaWorks Microservices Specialist Course (EM
 - Level 2 - Domain-Driven Design.
 - Level 3 - Microservices Design and Engineering with REST.
 
-It simulates an e-commerce application and has the microservices as submodules:
+It simulates an e-commerce application and has the following microservices as submodules:
 
 # ordering
 Microservice built using a purist approach of DDD, separating the domain model from frameworks and any technological influences, in addition to the distinction between domain entities and persistence entities.
@@ -12,13 +12,28 @@ Microservice built using a purist approach of DDD, separating the domain model f
 # billing
 Microservice built using a pragmatic approach of DDD, accepting a certain dependence on frameworks and bringing the domain model closer to technological aspects, such as persistence, in order to reduce complexity and facilitate implementation.
 
+# billing-scheduler (in development)
+Microservice built to perform scheduled tasks for the billing microservice.
+
 # product-catalog (in development)
 Microservice built using CDD (Contract-Driven Development) with Spring Cloud Contract.
 
 # The technologies used are:
-- Java 21 / 25
-- Spring (Boot, Web, Data JPA, Validation, Cloud Contract, REST Docs)
-- PostgreSQL Database with Flyway
-- Docker
-- Gradle
-- Lombok
+- Java
+  - 21
+  - 25
+- Spring
+  - Boot
+  - Web
+  - Data JPA
+  - Validation
+  - Cloud Contract
+  - REST Docs
+- Databases
+  - H2
+  - PostgreSQL
+- Tools
+  - Flyway
+  - Docker
+  - Gradle
+  - Lombok
