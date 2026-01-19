@@ -12,8 +12,8 @@ Microservice built using a purist approach of DDD, separating the domain model f
 # billing
 Microservice built using a pragmatic approach of DDD, accepting a certain dependence on frameworks and bringing the domain model closer to technological aspects, such as persistence, in order to reduce complexity and facilitate implementation.
 
-# billing-scheduler (in development)
-Microservice built to perform scheduled tasks for the billing microservice.
+# billing-scheduler
+Microservice built as a short-lived microservice to perform scheduled tasks for the billing microservice.
 
 # product-catalog (in development)
 Microservice built using CDD (Contract-Driven Development) with Spring Cloud Contract.
@@ -30,10 +30,10 @@ Microservice built using CDD (Contract-Driven Development) with Spring Cloud Con
   - Cloud Contract
   - REST Docs
 - Databases
-  - H2
   - PostgreSQL
 - Tools
   - Flyway
   - Docker
+  - Testcontainers
   - Gradle
   - Lombok
