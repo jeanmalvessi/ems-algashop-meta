@@ -35,5 +35,7 @@ Microservice built using CDD (Contract-Driven Development) with Spring Cloud Con
   - Flyway
   - Docker
   - Testcontainers
+  - WireMock
   - Gradle
   - Lombok
+  - JUnit / Mockito / AssertJ / REST Assured
