@@ -24,6 +24,26 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
+  mongodb:
+    image: mongo:8
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: algashop
+    restart: no
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+    healthcheck:
+      test: [ "CMD", "mongosh", "--eval", "db.adminCommand('ping')" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+    volumes:
+      - mongodb:/data/db
   fastpay:
     image: algaworks/fastpay:latest
     restart: no
@@ -45,3 +65,4 @@ services:
       SPRING_FLYWAY_LOCATIONS: classpath:db/migration,classpath:db/testdata
 volumes:
   postgres:
+  mongodb:

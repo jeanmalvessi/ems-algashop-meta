@@ -19,18 +19,17 @@ Microservice built as a short-lived microservice to perform scheduled asynchrono
 Microservice built using CDD (Contract-Driven Development) with Spring Cloud Contract.
 
 # Tech stack:
-- Java
-  - 21
-  - 25
+- Java 25
 - Spring
   - Boot
   - Web
-  - Data JPA
+  - Data JPA / MongoDB
   - Validation
   - Cloud Contract
   - REST Docs
-- Database
+- Databases
   - PostgreSQL
+  - MongoDB
 - Tools
   - Flyway
   - Docker
