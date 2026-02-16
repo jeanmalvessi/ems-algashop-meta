@@ -3,6 +3,7 @@ This is a project built during the AlgaWorks Microservices Specialist Course (EM
 
 - Level 2 - Domain-Driven Design.
 - Level 3 - Microservices Design and Engineering with REST.
+- Level 4 - Microservices Resilience and Scalability.
 
 It simulates an e-commerce application and has the following microservices as submodules:
 
