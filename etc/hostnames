@@ -5,3 +5,5 @@
 127.0.0.1 localstack
 127.0.0.1 s3.localstack
 127.0.0.1 product-image.localstack
+
+127.0.0.1 authorization-server
