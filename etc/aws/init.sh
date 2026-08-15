@@ -1,8 +1,8 @@
 #!/bin/bash
 
-AWS_ACCESS_KEY_ID=LS_ACCESS_KEY_ID
-AWS_SECRET_ACCESS_KEY=LS_SECRET_ACCESS_KEY
-AWS_DEFAULT_REGION=LS_REGION
+export AWS_ACCESS_KEY_ID=$LS_ACCESS_KEY_ID
+export AWS_SECRET_ACCESS_KEY=$LS_SECRET_ACCESS_KEY
+export AWS_DEFAULT_REGION=$LS_REGION
 
 awslocal secretsmanager create-secret \
     --name /secret/algashop/authorization-server/database \
