@@ -6,17 +6,29 @@ export AWS_DEFAULT_REGION=$LS_REGION
 
 awslocal secretsmanager create-secret \
     --name /secret/algashop/authorization-server/database \
-    --secret-string "{\"username\":\"postgres\",\"password\":\"postgres\"}" &
+    --secret-string "{\"username\":\"postgres\",\"password\":\"postgres\"}"
 
 awslocal ssm put-parameter \
-    --name /config/algashop/authorization-server/database/url \
-    --value "jdbc:postgresql://algashop-postgres:5432/authorization-server" \
-    --type String &
+    --name /config/algashop/authorization-server/datasource/url \
+    --value "jdbc:postgresql://algashop-postgres:5432/authorization_server" \
+    --type String
+
+awslocal configure set cli_follow_urlparam false
 
 awslocal ssm put-parameter \
-    --name /config/algashop/authorization-server/database/password \
-    --value "postgres" \
-    --type SecureString &
+    --name /config/algashop/authorization-server/issuer \
+    --value "http://auth.algashop.local:8081" \
+    --type String
+
+awslocal ssm put-parameter \
+    --name /config/algashop/authorization-server/clients/algashop-test/secret \
+    --value '{bcrypt}$2a$10$Fmw0PqHGZAYOqstR7ct7xuTkbljbE3uvDLE8JmuXxu.GttYxlKytW' \
+    --type SecureString
+
+awslocal ssm put-parameter \
+    --name /config/algashop/shared/auth-server-url \
+    --value "http://auth.algashop.local:8081" \
+    --type String
 
 awslocal s3 mb s3://product-image
 
