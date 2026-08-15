@@ -6,7 +6,17 @@ AWS_DEFAULT_REGION=LS_REGION
 
 awslocal secretsmanager create-secret \
     --name /secret/algashop/authorization-server/database \
-    --secret-string "{\"username\":\"postgres\",\"password\":\"postgres\"}"
+    --secret-string "{\"username\":\"postgres\",\"password\":\"postgres\"}" &
+
+awslocal ssm put-parameter \
+    --name /config/algashop/authorization-server/database/url \
+    --value "jdbc:postgresql://algashop-postgres:5432/authorization-server" \
+    --type String &
+
+awslocal ssm put-parameter \
+    --name /config/algashop/authorization-server/database/password \
+    --value "postgres" \
+    --type SecureString &
 
 awslocal s3 mb s3://product-image
 
