@@ -33,6 +33,7 @@ awslocal ssm put-parameter \
     --value "http://auth.algashop.local:8081" \
     --type String
 
+# testing123
 awslocal ssm put-parameter \
     --name /config/algashop/authorization-server/clients/algashop-test/secret \
     --value '{bcrypt}$2a$10$Fmw0PqHGZAYOqstR7ct7xuTkbljbE3uvDLE8JmuXxu.GttYxlKytW' \
@@ -42,6 +43,11 @@ awslocal ssm put-parameter \
     --name /config/algashop/shared/auth-server-url \
     --value "http://auth.algashop.local:8081" \
     --type String
+
+awslocal ssm put-parameter \
+    --name /config/algashop/authorization-server/clients/algashop-ecommerce-web/redirect-uris \
+    --value 'http://algashop.local:9080/login/oauth2/code/algashop-ecommerce-web,https://oauth.pstmn.io/v1/callback' \
+    --type StringList
 
 awslocal s3 mb s3://product-image
 
