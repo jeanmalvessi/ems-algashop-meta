@@ -7,9 +7,9 @@ services:
     ports:
       - '8080:8080'
     depends_on:
-      postgres:
+      algashop-postgres:
         condition: service_healthy
-      redis:
+      algashop-redis:
         condition: service_started
     deploy:
       resources:
@@ -25,7 +25,7 @@ services:
     ports:
       - '8082:8082'
     depends_on:
-      postgres:
+      algashop-postgres:
         condition: service_healthy
     deploy:
       resources:
@@ -39,13 +39,13 @@ services:
     ports:
       - '8083:8083'
     depends_on:
-      mongodb-1:
+      algashop-mongodb-1:
         condition: service_healthy
-      mongodb-2:
+      algashop-mongodb-2:
         condition: service_started
-      mongodb-3:
+      algashop-mongodb-3:
         condition: service_started
-      redis:
+      algashop-redis:
         condition: service_started
     deploy:
       resources:
@@ -60,7 +60,7 @@ services:
     ports:
       - '8081:8081'
     depends_on:
-      postgres:
+      algashop-postgres:
         condition: service_healthy
     deploy:
       resources:
