@@ -26,3 +26,7 @@
 	path = microservices/ems-algashop-authorization-server
 	url = https://github.com/jeanmalvessi/ems-algashop-authorization-server.git
 	branch = main
+[submodule "microservices/ems-algashop-service-registry"]
+	path = microservices/ems-algashop-service-registry
+	url = https://github.com/jeanmalvessi/ems-algashop-service-registry.git
+	branch = main
