@@ -1,0 +1,8 @@
+# Scripts executados dentro de containers Linux precisam de LF,
+# caso contrário o shebang vira "/bin/bash\r" e o container falha.
+*.sh text eol=lf
+mvnw text eol=lf
+*.bash text eol=lf
+Dockerfile text eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
