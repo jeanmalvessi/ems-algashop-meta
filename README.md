@@ -22,7 +22,7 @@ Handles invoice generation, credit card management, and payment processing. Buil
 Short-lived scheduled microservice that performs background tasks for the billing service, such as canceling expired invoices via the FastPay API. Uses lightweight Spring JDBC instead of JPA.
 
 ### product-catalog
-Manages products and categories. Built with **Contract-Driven Development (CDD)** using Spring Cloud Contract.
+Manages products and categories.
 
 ### template
 Reference starter project used as a base template for creating new microservices in this project.
