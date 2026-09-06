@@ -42,3 +42,7 @@
 	path = apps/ecommerce
 	url = https://github.com/jeanmalvessi/ems-algashop-ecommerce.git
 	branch = main
+[submodule "apps/admin"]
+	path = apps/admin
+	url = https://github.com/jeanmalvessi/ems-algashop-admin.git
+	branch = main

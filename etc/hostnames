@@ -18,6 +18,7 @@
 127.0.0.1 admin.algashop.local
 127.0.0.1 auth.algashop.local
 127.0.0.1 api.algashop.local
+127.0.0.1 admin-api.algashop.local
 
 127.0.0.1 fastpay
 127.0.0.1 wiremock
