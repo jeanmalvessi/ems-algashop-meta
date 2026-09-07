@@ -23,7 +23,7 @@ Handles invoice generation, credit card management, and payment processing. Buil
 Short-lived scheduled microservice that performs background tasks for the billing service, such as canceling expired invoices via the FastPay API. Uses lightweight Spring JDBC instead of JPA.
 
 ### product-catalog
-Manages products and categories.
+Manages products and categories, including stock control (restock/withdraw) and product image storage on AWS S3 (mocked via LocalStack). Uses MongoDB as its document store with Redis caching (Cache-Aside and Write-Through) and HTTP caching (ETags, Last-Modified, Cache-Control) on product endpoints.
 
 ### service-registry
 Service discovery server for the platform. Built with **Netflix Eureka** (via Spring Cloud), letting every other microservice register itself and letting the gateways and clients resolve peer instances by name (`lb://`) instead of hardcoded hosts/ports.
