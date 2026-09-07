@@ -8,7 +8,7 @@ E-commerce platform project built during the AlgaWorks Microservices Specialist 
 - Level 5 - Security, Authentication and Authorization in Microservices
 - Level 6 - API Gateway, BFF and Service Discovery
 
-## Microservices
+## Microservices - Course focus
 
 ### authorization-server
 Issues and manages OAuth2 / OpenID Connect tokens for the platform. Built with **Spring Authorization Server**, acting as the identity provider that every other service trusts as an OAuth2 resource server (and `ordering` additionally as an OAuth2 client). Handles user account management, email verification, password reset, RSA/JWKS-signed JWT access tokens, and role- and client-scoped authorization policies.
@@ -37,7 +37,7 @@ API gateway for the `ecommerce` storefront app. Built with **Spring Cloud Gatewa
 ### template
 Reference starter project used as a base template for creating new microservices in this project.
 
-## Apps
+## Apps - Used to test the microservices
 
 ### admin
 Back-office admin dashboard. Built as an **Angular** SPA, authenticating via OAuth2 Authorization Code + PKCE and consuming the platform through `gateway-admin`.
