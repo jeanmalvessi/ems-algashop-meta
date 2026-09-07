@@ -60,8 +60,6 @@ Customer-facing storefront. Built as a **Spring Boot Web MVC + Thymeleaf** serve
 - **Build:** Gradle
 - **Utilities:** Lombok, ModelMapper, HypersistenceTSID, Grafana K6, Commons Validator
 - **Infrastructure:** Docker, Docker Compose, AWS S3 / Secrets Manager / Parameter Store (mocked via LocalStack), Mailpit (SMTP testing)
-- **Admin App:** Angular 17, TypeScript, RxJS, PrimeNG, angular-oauth2-oidc (OAuth2 Authorization Code + PKCE), Playwright (E2E)
-- **Ecommerce App:** Spring Boot Web MVC, Thymeleaf, Spring Security OAuth2 Client, Spring Session + Redis
 
 ## Running Locally
 
